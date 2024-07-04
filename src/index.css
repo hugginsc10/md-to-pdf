@@ -79,7 +79,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -88,6 +87,14 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: #d8d8d8;
+  border-radius: 4px;
+}
+
 
 button {
   border-radius: 8px;
@@ -119,4 +126,49 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.markdown-body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  text-align: center;
+  color: midnightblue;
+  font-weight: bold;
+}
+.markdown-body p {
+
+}
+.markdown-body p,
+.markdown-body ul,
+.markdown-body ol {
+  text-align: left;
+  margin-bottom: 1em;
+}
+.markdown-body strong {
+  color: midnightblue;
+}
+.markdown-body em {
+  color: #388e3c;
+}
+.markdown-body pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: lightgray;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+}
+.dark {
+  text-align: left;
 }
